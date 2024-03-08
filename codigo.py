@@ -10,7 +10,7 @@ import time
 # pyautogui.press -> apertar 1 tecla
 # pyautogui.click -> clicar em algum lugar da tela
 # pyautogui.hotkey -> combinação de teclas
-pyautogui.PAUSE = 0.3
+pyautogui.PAUSE = 0.4
 
 # abrir o navegador (chrome)
 pyautogui.press("win")
@@ -21,18 +21,18 @@ pyautogui.press("enter")
 link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
 pyautogui.write(link)
 pyautogui.press("enter")
-time.sleep(4)
+time.sleep(0.5)
 
-
-# # Passo 2: Fazer login
-# # selecionar o campo de email
-# pyautogui.click(x=685, y=451)
+# Passo 2: Fazer login
+# selecionar o campo de email
+pyautogui.click(x=804, y=581)
 # # escrever o seu email
-# pyautogui.write("pythonimpressionador@gmail.com")
-# pyautogui.press("tab") # passando pro próximo campo
-# pyautogui.write("sua senha")
-# pyautogui.click(x=955, y=638) # clique no botao de login
-# time.sleep(3)
+pyautogui.write("pythonimpressionador@gmail.com")
+pyautogui.press("tab") # passando pro próximo campo
+pyautogui.write("sua senha")
+pyautogui.press("tab") # clique no botao de login
+pyautogui.press("enter")
+time.sleep(3)
 
 # # Passo 3: Importar a base de produtos pra cadastrar
 # import pandas as pd
